@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.futuretechnology.motes.activity.EditNoteActivity">
+
+    <item android:id="@+id/color_note"
+        android:icon="@drawable/ic_color"
+        android:title="@string/color_note"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/save_note"
+        android:icon="@drawable/ic_save"
+        android:title="@string/save_note"
+        app:showAsAction="always" />
+</menu>

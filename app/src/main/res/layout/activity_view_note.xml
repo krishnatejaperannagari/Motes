@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootview"
+    tools:context="me.futuretechnology.motes.activity.ViewNoteActivity"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/view_note_toolbar">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="@string/big_text"
+                android:id="@+id/textContent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:padding="16dp"
+                android:text="Text"
+                android:layout_below="@+id/llTitle" />
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/title_background_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:name="Note Title"
+                    android:id="@+id/textTitle"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:text="Text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:name="LastUpdated"
+                    android:id="@+id/textUpdated"
+                    android:text="Text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/view_note_toolbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

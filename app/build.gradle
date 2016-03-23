@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+// This does not break the build when Android Studio is missing the JRebel for Android plugin.
+apply plugin: 'com.zeroturnaround.jrebel.android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "me.futuretechnology.motes"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'io.realm:realm-android:0.82.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'com.jonathanfinerty.once:once:0.4.0'
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+}

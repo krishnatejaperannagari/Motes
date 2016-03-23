@@ -1,0 +1,21 @@
+<resources>
+
+
+    <string-array name="default_color_choice_values" translatable="false">
+        <item>#f16364</item>
+        <item>#f9a43e</item>
+        <item>#e4c62e</item>
+        <item>#67bf74</item>
+        <item>#59a2be</item>
+        <item>#2093cd</item>
+        <item>#ad62a7</item>
+        <item>#805781</item>
+    </string-array>
+
+    <string-array name="homescreen_color_choice_values" translatable="false">
+        <item>#ffffff</item>
+        <item>#000000</item>
+    </string-array>
+
+  
+</resources>

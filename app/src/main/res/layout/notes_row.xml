@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivNoteIcon"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New TextNew TextNew TextNew TextNew TextNew TextNew Text"
+                        android:id="@+id/tvTitle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:layout_marginRight="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text="Text"
+                        android:id="@+id/tvDateItem" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text New Text"
+                    android:id="@+id/tvContent"
+                    android:maxLines="2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:background="#1f000000"
+        android:id="@+id/separator1" />
+
+</LinearLayout>

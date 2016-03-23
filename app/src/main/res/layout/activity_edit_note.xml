@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.futuretechnology.motes.activity.EditNoteActivity">
+
+    <me.futuretechnology.motes.view.RevealBackgroundView
+        android:id="@+id/revealBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/toolbarEditNote"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llEditNote"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbarEditNote"
+        android:padding="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputTitle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTitle"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:hint="Title"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputContent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            >
+
+            <EditText
+                android:id="@+id/editContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Note text"
+                android:inputType="textMultiLine"
+                android:nextFocusDown="@id/editTitle"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</RelativeLayout>
